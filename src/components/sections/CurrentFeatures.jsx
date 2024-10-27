@@ -1,4 +1,3 @@
-// src/components/sections/CurrentFeatures.jsx
 import React from 'react';
 import featuresImage from '../../assets/features-section.png';
 

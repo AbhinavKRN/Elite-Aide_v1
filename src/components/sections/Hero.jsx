@@ -24,7 +24,6 @@ const Hero = () => {
           </button>
         </div>
 
-        {/* Right Content - Phone Image */}
         <div className="relative flex justify-center md:justify-end mt-8 md:mt-0">
           <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-blue-600/20 to-transparent rounded-full blur-3xl"></div>
           <img 
