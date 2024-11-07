@@ -23,12 +23,13 @@ export default {
         shine: 'shine 1.5s ease-in-out infinite',
         'smooth-bounce': 'smooth-bounce 2s cubic-bezier(0.75, 0.75, 0.75, 0.75) 2',
         'circle-pop': 'circlePop 2.5s cubic-bezier(0.75, 0.75, 0.75, 0.75) forwards',
-        'circle-pulse': 'circlePulse 2s ease-in-out infinite'
+        'circle-pulse': 'circlePulse 2s ease-in-out infinite',
+        'border-flow': 'border-flow 3s ease infinite'
       },
       keyframes: {
         shine: {
-          '0%': { left: '-100%' },
-          '100%': { left: '100%' }
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' }
         },
         'smooth-bounce': {
           '0%, 100%': { transform: 'translateY(0)' },
@@ -62,6 +63,10 @@ export default {
             opacity: '0.8',
             transform: 'scale(1.05)'
           }
+        },
+        'border-flow': {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' }
         }
       }
     },
