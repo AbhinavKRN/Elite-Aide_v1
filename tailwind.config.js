@@ -22,7 +22,7 @@ export default {
       animation: {
         shine: 'shine 1.5s ease-in-out infinite',
         'smooth-bounce': 'smooth-bounce 2s cubic-bezier(0.75, 0.75, 0.75, 0.75) 2',
-        'circle-pop': 'circlePop 2.5s cubic-bezier(0.75, 0.75, 0.75, 0.75) forwards',
+        'circle-pop': 'circlePop 4.5s cubic-bezier(0.75, 0.75, 0.75, 0.75) infinite forwards',
         'circle-pulse': 'circlePulse 2s ease-in-out infinite',
         'border-flow': 'border-flow 3s ease infinite'
       },
