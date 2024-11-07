@@ -19,6 +19,23 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
+      animation: {
+        shine: 'shine 1.5s ease-in-out infinite',
+        'smooth-bounce': 'smooth-bounce 2s cubic-bezier(0.75, 0.75, 0.75, 0.75) 2',
+      },
+      keyframes: {
+        shine: {
+          '0%': { left: '-100%' },
+          '100%': { left: '100%' }
+        },
+        'smooth-bounce': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+          '75%': { transform: 'translateY(-10px)' },
+          '85%': { transform: 'translateY(-5px)' },
+          '95%': { transform: 'translateY(-2px)' }
+        }
+      }
     },
   },
   plugins: [],
