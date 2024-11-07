@@ -22,6 +22,8 @@ export default {
       animation: {
         shine: 'shine 1.5s ease-in-out infinite',
         'smooth-bounce': 'smooth-bounce 2s cubic-bezier(0.75, 0.75, 0.75, 0.75) 2',
+        'circle-pop': 'circlePop 2.5s cubic-bezier(0.75, 0.75, 0.75, 0.75) forwards',
+        'circle-pulse': 'circlePulse 2s ease-in-out infinite'
       },
       keyframes: {
         shine: {
@@ -34,6 +36,32 @@ export default {
           '75%': { transform: 'translateY(-10px)' },
           '85%': { transform: 'translateY(-5px)' },
           '95%': { transform: 'translateY(-2px)' }
+        },
+        circlePop: {
+          '0%': { 
+            transform: 'scale(0.3) translateY(100px)',
+            opacity: '0'
+          },
+          '50%': {
+            transform: 'scale(1.1) translateY(0)',
+          },
+          '75%': {
+            transform: 'scale(0.95) translateY(0)',
+          },
+          '100%': { 
+            transform: 'scale(1) translateY(0)',
+            opacity: '1'
+          }
+        },
+        circlePulse: {
+          '0%, 100%': {
+            opacity: '0.6',
+            transform: 'scale(1)'
+          },
+          '50%': {
+            opacity: '0.8',
+            transform: 'scale(1.05)'
+          }
         }
       }
     },

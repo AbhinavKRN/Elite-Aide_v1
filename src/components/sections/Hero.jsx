@@ -46,7 +46,6 @@ const Hero = () => {
             }`}
           >
             <button className="group relative flex items-center space-x-3 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-all duration-300 overflow-hidden transform hover:scale-105">
-              {/* Shine effect overlay */}
               <div 
                 className={`absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12 ${
                   isVisible ? 'animate-shine' : ''
