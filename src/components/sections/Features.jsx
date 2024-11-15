@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ClipboardList, Zap, Calendar } from 'lucide-react';
 import phoneImage from '../../assets/phone2.png';
 import calendarImage from '../../assets/calender.png';
-import featuresContent from '../../assets/Features/table.png';
+import featuresContent from '../../assets/features/table.png';
 
 const Features = () => {
   const [isVisible, setIsVisible] = useState(false);
