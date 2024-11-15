@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ClipboardList, Zap, Calendar } from 'lucide-react';
 import phoneImage from '../../assets/phone2.png';
 import calendarImage from '../../assets/calender.png';
+import featuresContent from '../../assets/Features/table.png';
 
 const Features = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,11 +17,9 @@ const Features = () => {
       },
       { threshold: 0.2 }
     );
-
     if (circleRef.current) {
       observer.observe(circleRef.current);
     }
-
     return () => {
       if (circleRef.current) {
         observer.unobserve(circleRef.current);
@@ -30,17 +29,17 @@ const Features = () => {
 
   return (
     <section className="container mx-auto px-4 md:px-6 py-8 md:py-16 min-h-screen bg-black">
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 md:mb-20 text-center md:text-left">
+      <h2 className=" font-raleway text-3xl md:text-4xl font-bold text-white mb-12 md:mb-20 text-center md:text-left">
         Why Choose Elite Aide?
       </h2>
       
-      <div className="relative flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16">
-        <div className="relative flex-1 w-full lg:w-auto">
+      <div className="relative flex flex-col lg:flex-row items-start gap-12 lg:gap-32"> 
+        <div className="relative flex-1 w-full lg:w-auto lg:pl-12"> 
           <div className="relative transform -rotate-12">
             <img 
               src={phoneImage} 
               alt="Elite Aide Interface" 
-              className="w-full max-w-[280px] md:max-w-lg mx-auto"
+              className="w-full max-w-[380px] md:max-w-lg mx-auto"
             />
             
             <div 
@@ -65,21 +64,11 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="flex-1 space-y-8 md:space-y-12 w-full lg:w-auto">
-          <FeatureItem 
-            icon={ClipboardList}
-            title="Create & Organize Tasks"
-            description="Add, prioritize, and categorize tasks with ease."
-          />
-          <FeatureItem 
-            icon={Zap}
-            title="Auto-Complete Tasks"
-            description="Let Elite Aide handle repetitive tasks automatically."
-          />
-          <FeatureItem 
-            icon={Calendar}
-            title="Daily & Monthly View"
-            description="Track your tasks over time with clear daily & monthly layouts."
+        <div className="flex-1 w-full lg:w-auto lg:pl-20">
+          <img 
+            src={featuresContent} 
+            alt="Elite Aide Features"
+            className="w-full max-w-[320px] mx-auto lg:mr-60 lg:ml-auto"
           />
         </div>
       </div>

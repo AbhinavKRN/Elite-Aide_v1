@@ -18,6 +18,16 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
+      },
+      fontSize: {
+        'hero': ['60.63px', {
+          lineHeight: '71.18px',
+          fontWeight: '900',
+        }],
+      },
+      width: {
+        'hero': '959.38px',
       },
       animation: {
         shine: 'shine 1.5s ease-in-out infinite',
