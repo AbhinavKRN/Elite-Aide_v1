@@ -1,23 +1,23 @@
 import React from 'react';
 import Hero from '../components/sections/Hero';
 import Features from '../components/sections/Features';
-import CurrentFeatures from '../components/sections/CurrentFeatures';
 import Mission from '../components/sections/Mission';
+import CurrentFeatures from '../components/sections/CurrentFeatures';
 import FinalCTA from '../components/sections/FinalCTA';
 import Footer from '../components/sections/Footer';
 import FooterIcon from '../components/sections/FooterIcon';
 
 const MainLayout = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <main className="bg-black min-h-screen w-full overflow-hidden">
       <Hero />
       <Features />
-      <CurrentFeatures />
       <Mission />
+      <CurrentFeatures />
       <FinalCTA />
       <Footer />
       <FooterIcon />
-    </div>
+    </main>
   );
 };
 

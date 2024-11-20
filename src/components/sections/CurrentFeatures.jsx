@@ -1,5 +1,5 @@
 import React from 'react';
-import featuresImage from '../../assets/features1.png';
+import features1 from '../../assets/features1.png';
 
 const CurrentFeatures = () => {
   return (
@@ -7,7 +7,7 @@ const CurrentFeatures = () => {
       <div className="container mx-auto px-4 py-12 md:py-20">
         <div className="relative w-full">
           <img 
-            src={featuresImage} 
+            src={features1} 
             alt="Features overview showing task management, organization, and tracking capabilities"
             className="w-full h-full object-contain"
           />

@@ -1,6 +1,6 @@
 import React from 'react';
-import circlePhoneImage from '../../assets/circlePhone.png';
-import ringImage from '../../assets/ring.png';
+import circlePhone from '../../assets/circlePhone.png';
+import ring from '../../assets/ring.png';
 
 const FinalCTA = () => {
   return (
@@ -8,14 +8,14 @@ const FinalCTA = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
           <img 
-            src={circlePhoneImage} 
+            src={circlePhone}
             alt="Phone interface in circle"
-            className="w-full max-w-2xl object-contain -mr-32" 
+            className="w-[85%] sm:w-[90%] md:w-full max-w-2xl object-contain relative z-10 md:-mr-32" 
           />
           <img 
-            src={ringImage} 
+            src={ring}
             alt="Decorative ring"
-            className="w-full max-w-2xl object-contain -mt-32 -ml-32"
+            className="w-[85%] sm:w-[90%] md:w-full max-w-2xl object-contain -mt-[55%] sm:-mt-[45%] md:-mt-32 md:-ml-32"
           />
         </div>
       </div>

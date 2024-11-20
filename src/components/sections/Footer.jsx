@@ -4,7 +4,7 @@ import projectDark from '../../assets/project_dark.png';
 const Footer = () => {
   return (
     <footer className="w-full bg-black">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-0 md:py-28">
+      <div className="mobile-container py-8 md:py-28">
         <div className="grid grid-cols-6 md:grid-cols-12 items-center gap-4 md:gap-8">
           <div className="col-span-1 md:col-span-3">
             <div className="h-px bg-gray-800"></div>
@@ -14,7 +14,7 @@ const Footer = () => {
             <img 
               src={projectDark} 
               alt="Project Dark Horse" 
-              className="w-full max-w-[280px] md:max-w-2xl mx-auto hover:scale-105 transition-transform duration-500"
+              className="w-full max-w-[200px] sm:max-w-[280px] md:max-w-2xl mx-auto hover:scale-105 transition-transform duration-500"
             />
           </div>
           
