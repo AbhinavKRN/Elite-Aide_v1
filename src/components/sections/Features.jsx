@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ClipboardList, Zap, Calendar } from 'lucide-react';
+// Remove unused imports
 import phoneImage from '../../assets/phone2.png';
 import calendarImage from '../../assets/calender.png';
 import featuresContent from '../../assets/features/table.png';
@@ -28,7 +28,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section className="mobile-container mobile-section min-h-screen bg-black">
+    <section className="mobile-container mobile-section min-h-screen bg-black px-4 md:px-8">
       <h2 className="font-raleway mobile-heading text-white mb-12 md:mb-20 text-center md:text-left text-2xl md:text-4xl font-bold">
         Why Choose Elite Aide?
       </h2>
@@ -74,3 +74,5 @@ const Features = () => {
     </section>
   );
 };
+
+export default Features;
