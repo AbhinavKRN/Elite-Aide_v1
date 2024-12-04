@@ -29,22 +29,22 @@ const Features = () => {
 
   return (
     <section className="mobile-container mobile-section min-h-screen bg-black">
-      <h2 className="font-raleway mobile-heading text-white mb-8 md:mb-20 text-center md:text-left">
+      <h2 className="font-raleway mobile-heading text-white mb-12 md:mb-20 text-center md:text-left text-2xl md:text-4xl font-bold">
         Why Choose Elite Aide?
       </h2>
       
-      <div className="relative flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-32">
+      <div className="relative flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-32">
         <div className="relative flex-1 w-full lg:w-auto">
           <div className="relative transform -rotate-12">
             <img 
               src={phoneImage} 
               alt="Elite Aide Interface" 
-              className="w-full max-w-[280px] md:max-w-[380px] lg:max-w-lg mx-auto"
+              className="w-full max-w-[240px] md:max-w-[380px] lg:max-w-lg mx-auto"
             />
             
             <div 
               ref={circleRef}
-              className={`absolute top-4 md:top-8 left-1/4 scale-50 sm:scale-75 md:scale-100 ${
+              className={`absolute top-2 md:top-8 left-1/4 scale-50 sm:scale-75 md:scale-100 ${
                 isVisible ? 'animate-circle-pop' : 'opacity-0'
               }`}
             >
@@ -63,16 +63,14 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 w-full lg:w-auto px-4 lg:px-0">
+        <div className="flex-1 w-full lg:w-auto px-0 lg:px-0">
           <img 
             src={featuresContent} 
             alt="Elite Aide Features"
-            className="w-full max-w-[280px] sm:max-w-[320px] mx-auto lg:mr-60 lg:ml-auto"
+            className="w-full max-w-[260px] sm:max-w-[320px] mx-auto lg:mr-60 lg:ml-auto"
           />
         </div>
       </div>
     </section>
   );
 };
-
-export default Features;

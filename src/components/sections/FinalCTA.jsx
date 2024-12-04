@@ -4,7 +4,7 @@ import ring from '../../assets/ring.png';
 
 const FinalCTA = () => {
   return (
-    <section className="relative w-full bg-black py-8 md:py-32"> 
+    <section className="relative w-full bg-black "> 
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center pt-8 md:pt-0">
           <img 

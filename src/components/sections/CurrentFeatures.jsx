@@ -4,7 +4,7 @@ import features1 from '../../assets/features1.png';
 const CurrentFeatures = () => {
   return (
     <section className="bg-black w-full overflow-hidden"> 
-      <div className="container mx-auto px-4 py-12 md:py-20">
+      <div className="container mx-auto  md:py-20">
         <div className="relative w-full">
           <img 
             src={features1} 
