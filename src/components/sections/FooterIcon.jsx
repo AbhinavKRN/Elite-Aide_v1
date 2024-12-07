@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo22 from '../../assets/logo22.png';
 
 const FooterIcon = () => {
+  const [feedback, setFeedback] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Feedback submitted:', feedback);
+    setFeedback('');
+  };
   return (
     <footer className="bg-black py-8 md:py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 mb-8 md:mb-16">
-          {/* Logo Section - mobile centered, desktop left */}
           <div className="flex items-center gap-4">
             <img 
               src={logo22}
@@ -15,7 +21,6 @@ const FooterIcon = () => {
             />
           </div>
           
-          {/* Social Icons - mobile size adjusted */}
           <div className="flex gap-6 md:gap-8">
             <a href="#" className="text-[#3472BE] hover:text-blue-400">
               <svg className="w-8 h-8 md:w-[55px] md:h-[55px]" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,19 +40,27 @@ const FooterIcon = () => {
           </div>
         </div>
 
-        {/* Feedback Section - adjusted for mobile */}
         <div className="mb-8 md:mb-12">
           <p className="text-gray-300 mb-4 text-base md:text-lg text-center md:text-left font-nunito font-medium leading-relaxed max-w-[570px]">
             Please provide your feedback. It helps us improve your experience and be better everyday.
           </p>
-          <input 
-            type="text"
-            placeholder="Write your feedback here"
-            className="w-full max-w-full md:max-w-md bg-[#111111] rounded-md py-3 px-4 text-gray-300 placeholder-gray-600 focus:outline-none"
-          />
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+            <input 
+              type="text"
+              placeholder="Write your feedback here"
+              className="w-full max-w-full md:max-w-md bg-[#111111] rounded-md py-3 px-4 text-gray-300 placeholder-gray-600 focus:outline-none"
+              value={feedback}
+              onChange={(e) => setFeedback(e.target.value)}
+            />
+            <button 
+              type="submit"
+              className="bg-[#3472BE] hover:bg-blue-600 text-white px-6 py-3 rounded-md transition-colors duration-200 whitespace-nowrap"
+            >
+              Submit Feedback
+            </button>
+          </form>
         </div>
 
-        {/* Bottom Links - mobile centered */}
         <div className="flex justify-center md:justify-end">
           <div className="flex gap-4 md:gap-8 text-gray-500 text-sm md:text-base">
             <a href="#" className="hover:text-blue-400">Terms of Service</a>
