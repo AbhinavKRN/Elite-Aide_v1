@@ -12,8 +12,8 @@ const MainLayout = () => {
     <main className="bg-black min-h-screen w-full overflow-hidden">
       <Hero />
       <Features />
-      <Mission />
       <CurrentFeatures />
+      <Mission />
       <FinalCTA />
       <Footer />
       <FooterIcon />

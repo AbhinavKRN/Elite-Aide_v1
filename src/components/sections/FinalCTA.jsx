@@ -4,9 +4,9 @@ import ring from '../../assets/ring.png';
 
 const FinalCTA = () => {
   return (
-    <section className="relative w-full bg-black "> 
+    <section className="relative w-full  bg-black -mt-20 md:mt-0"> {/* Added negative margin top */}
       <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-center pt-8 md:pt-0">
+        <div className="flex flex-col items-center justify-center">
           <img 
             src={circlePhone}
             alt="Phone interface in circle"
@@ -23,4 +23,4 @@ const FinalCTA = () => {
   );
 };
 
-export default FinalCTA;  
+export default FinalCTA;
