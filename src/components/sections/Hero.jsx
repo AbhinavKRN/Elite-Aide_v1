@@ -27,6 +27,14 @@ const Hero = () => {
     };
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-black overflow-hidden">
       <div className="mobile-container px-4 md:container">
@@ -52,9 +60,9 @@ const Hero = () => {
             </button>
 
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-white hover:text-blue-500 text-sm font-medium">Home</a>
-              <a href="#" className="text-white hover:text-blue-500 text-sm font-medium">About</a>
-              <a href="#" className="text-white hover:text-blue-500 text-sm font-medium">Contact Us</a>
+              <button onClick={() => scrollToSection('hero')} className="text-white hover:text-blue-500 text-sm font-medium">Home</button>
+              <button onClick={() => scrollToSection('features')} className="text-white hover:text-blue-500 text-sm font-medium">About</button>
+              <button onClick={() => scrollToSection('footer')} className="text-white hover:text-blue-500 text-sm font-medium">Contact Us</button>
               <button className="text-white text-sm font-semibold hover:text-blue-500 transition-colors">
                 Download the App
               </button>
@@ -64,9 +72,9 @@ const Hero = () => {
           {isMenuOpen && (
             <div className="fixed inset-0 z-50 bg-black bg-opacity-95 md:hidden">
               <div className="flex flex-col items-center justify-center h-full space-y-8">
-                <a href="#" className="text-white hover:text-blue-500 text-xl font-medium">Home</a>
-                <a href="#" className="text-white hover:text-blue-500 text-xl font-medium">About</a>
-                <a href="#" className="text-white hover:text-blue-500 text-xl font-medium">Contact Us</a>
+                <button onClick={() => scrollToSection('hero')} className="text-white hover:text-blue-500 text-xl font-medium">Home</button>
+                <button onClick={() => scrollToSection('features')} className="text-white hover:text-blue-500 text-xl font-medium">About</button>
+                <button onClick={() => scrollToSection('footer')} className="text-white hover:text-blue-500 text-xl font-medium">Contact Us</button>
                 <button className="text-white text-xl font-semibold hover:text-blue-500 transition-colors">
                   Download the App
                 </button>

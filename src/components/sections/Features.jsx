@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-// Remove unused imports
 import phoneImage from '../../assets/phone2.png';
 import calendarImage from '../../assets/calender.png';
 import featuresContent from '../../assets/features/table.png';

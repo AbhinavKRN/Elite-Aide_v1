@@ -10,13 +10,19 @@ import FooterIcon from '../components/sections/FooterIcon';
 const MainLayout = () => {
   return (
     <main className="bg-black min-h-screen w-full overflow-hidden">
-      <Hero />
-      <Features />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="features">
+        <Features />
+      </div>
       <CurrentFeatures />
       <Mission />
       <FinalCTA />
       <Footer />
-      <FooterIcon />
+      <div id="footer">
+        <FooterIcon />
+      </div>
     </main>
   );
 };
